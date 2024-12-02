@@ -1,0 +1,279 @@
+/* general code */
+body {
+  margin: 0;
+  background-color: white;
+}
+.section {
+  margin-top: 450px;
+  margin: 450px 60px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px grey;
+  border-radius: 16px;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+.third-flyer .img, .second-flyer .img, .first-flyer .img {
+ width: 100%;
+ border: soild 1px black;
+}
+.first-flyer img, .third-flyer img, .second-flyer img {
+  height: 600px;
+  width: 100%;
+  border-left: soild 2px grey;
+}
+.third-flyer p, .second-flyer p, .first-flyer p{
+  padding: 12px;
+}
+footer {
+  width: 100%;
+  background-color: orangered;
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Header */
+header h1 {
+  font-family: "Pacifico", cursive;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+header #tasty-bites-logo {
+  width: 70px;
+}
+header {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ background-color: blue; 
+ padding: 6px 0px;
+ border-bottom: solid 6px #e8491d;
+}
+nav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+}
+nav a:hover, nav a:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+  opacity: 0.7;
+  transition: 0.12s;
+  }
+nav .current-page {
+  color: #e8491d;
+}
+header #business-name-and-logo {
+  display: flex;
+  align-items: center;
+}
+header span {
+  color: #e8491d;
+}
+
+/* landing page */
+#img {
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 850px;
+        z-index: -5;
+        }
+main .landing-page-foreward-button, main .landing-page-backward-button {
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  font-size: 50px;
+  border: solid 3.5px cyan;
+  cursor: pointer;
+  margin: 0px 20px;
+  background: transparent;
+  color: cyan;
+}
+main .landing-page-foreward-button:hover, main .landing-page-backward-button:hover, main .landing-page-foreward-button:active, main .landing-page-backward-button:active {
+  background-color: rgba(255,255,255,0.35);
+}
+#landing-page-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: relative;
+  top: 368px;
+  width: 100%;
+}
+.landing-page-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.landing-page-text button,.buy-button {
+  background-color: #e8491d;
+  border: none;
+  font-size: bolder;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+}
+.landing-page-text button:hover, .landing-page-text button:active {
+  background-color: #e8491d;
+  border: none;
+  font-size: bolder;
+  opacity: 0.7;
+  transition: 0.25s;
+}
+.landing-page-text h1{
+  font-size: 55px;
+  text-transform: uppercase;
+  width: 700px;
+  padding: 8px;
+  text-align: center;
+}
+.landing-page-text h3 {
+  font-weight: bolder;
+}
+button a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+}
+
+/* landing page elements animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.forward-animation {
+  animation: slideInLeft 1s ease-in 0.5s;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.backward-animation {
+  animation: slideInRight 1s ease-in 0.5s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-25px);
+  }
+  40% {
+    transform: translateY(25px);
+  }
+  55% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bounce {
+  animation: bounce 2s ease-in 1s;
+  }
+@keyframes slideUp {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.slide-up {
+  animation: slideUp 1.5s ease-out 0.5s;
+}
+/* about-me-story */
+.about-me-story {
+  width: 100%;
+  margin-top: 40px;
+}
+.about-me-story p {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px grey;
+  background-color: whitesmoke;
+  border-radius: 16px;
+  margin: 0px 45px;
+  text-align: center;
+  padding: 25px;
+}
+/* order-now page */
+
+/* search box */
+#search-bar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 25px;
+  background-color: whitesmoke;
+  width: 300px;
+  border-radius: 6px;
+}
+input {
+  border: solid 1px white;
+  margin-left: 12px;
+  border-radius: 6px;
+  padding: 13px;
+}
+label {
+  border: solid 3px white;
+  border-radius: 6px;
+  padding: 13px;
+}
+.product {
+  width: 250px;
+  padding: 20px;
+  border: solid 3px whitesmoke;
+  margin: 35px;
+  display: inline-block;
+}
+.product-list {
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+}
+#eighth-buy-button, #seventh-buy-button, #sixth-buy-button, #fifth-buy-button, #forth-buy-button, #third-buy-button, #second-buy-button, #first-buy-button {
+  color: green;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+.cancel-button {
+  background-color: yellow;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+}
