@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order now</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compartable" content="IE=edge">
+    <title>Tasty-bites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="css/tasty-bites.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div id="business-name-and-logo">
+      <h1>tasty<span>Bites</span></h1>
+    </div>
+    <nav>
+      <a href="tasty-bites.html" >
+        HOME
+      </a>
+      <a href="order-now.html" class="current-page">
+        ORDER NOW
+      </a>
+      <a href="about-us.html">
+        ABOUT US
+      </a>
+    </nav>
+  </header>
+  
+  <center>
+    <section id="search-bar">
+      <label for="search">
+      &#x1F50D;
+      </label>
+      <input 
+      type="search" 
+      name="search" 
+      id="search-item" 
+      placeholder="search food"
+      onkeyup="search()">
+    </section>
+  </center>
+  
+  <section 
+  class="product-list" 
+  id="product-list">
+  <!-- first product -->
+    <div class="product">
+      <img src="img/rice-and-stew.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> Rice,stew and plaintain</p>
+        <p>₦2500</p>
+        <p id="first-buy-button"></p>
+        <button 
+        onclick="buy('first')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('first')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+    
+     <!-- second product -->
+    <div class="product">
+      <img src="img/fried-rice-and-chicken.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> Fried rice and chicken</p>
+        <p>₦3500</p>
+        <p id="second-buy-button"></p>
+        <button 
+        onclick="buy('second')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('second')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+    
+    <!-- third product -->
+    <div class="product">
+      <img src="img/fried-rice-and-beans.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> fried rice and beans</p>
+        <p>₦4000</p>
+        <p id="third-buy-button"></p>
+        <button 
+        onclick="buy('third')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('third')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+    
+     <!-- forth product -->
+    <div class="product">
+      <img src="img/spaghetti-and-meat.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> spaghetti and beans</p>
+        <p>₦3500</p>
+        <p id="forth-buy-button"></p>
+        <button 
+        onclick="buy('forth')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('forth')"
+        class="cancel-button buy-button">
+       cancel
+        </button>
+      </div>
+    </div>
+    
+     <!-- fifth product -->
+    <div class="product">
+      <img src="img/spagetti-and-meat-balls.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> spaghetti and meatballs</p>
+        <p>₦3500</p>
+        <p id="fifth-buy-button"></p>
+        <button 
+        onclick="buy('fifth')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('fifth')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+    
+    <!-- sixth product -->
+    <div class="product">
+      <img src="img/pounded-yam-and-egusi.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> pounded yam and egusi soup</p>
+        <p>₦2500</p>
+        <p id="sixth-buy-button"></p>
+        <button 
+        onclick="buy('sixth')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('sixth')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+ 
+   
+     <!-- seventh product -->
+    <div class="product">
+      <img src="img/pounded-yam-and-vegetable-soup.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> pounded yam and vegetable soup</p>
+        <p>₦2500</p>
+        <p id="seventh-buy-button"></p>
+        <button 
+        onclick="buy('seventh')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="cancel('seventh')"
+        class="cancel-button buy-button">
+        cancel
+        </button>
+      </div>
+    </div>
+    
+    <!-- eighth product -->
+    <div class="product">
+      <img src="img/pounded-yam-and-okra.jpg" alt="">
+      <div class="product-details">
+        <p class="p"> pounded yam and okra soup</p>
+        <p>₦2000</p>
+        <p id="eighth-buy-button"></p>
+        <button 
+        onclick="buy('eighth')"
+        class="buy-button">
+        BUY
+        </button>
+        <button 
+        onclick="buy('eighth')"
+        class="cancel-button buy-button">
+        Cancel
+        </button>
+      </div>
+    </div>
+   </section>
+   
+  <footer>
+    For more enquiries contact alphatechbest@gmail.com
+  </footer>
+  <script type ="text/JavaScript" 
+    src="js/tasty-bites.js"></script>
+</body>
+</html>
