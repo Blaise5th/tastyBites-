@@ -1,4 +1,4 @@
-const images = ["img/flyer1.jpg", "img/flyer2.jpg", "img/flyer3.jpg"];
+const images = ["flyer1.jpg", "flyer2.jpg", "flyer3.jpg"];
 let currentIndex = 0;
 
 const forward = () => {
